@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#1c1716">
+	<meta name="description" content="A quiet final chapter in a story still being written.">
+	<title>The Final Chapter | Our Story</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://images.unsplash.com">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/final.css">
+	<script src="js/final.js" defer></script>
+	<script src="js/script.js" defer></script>
+</head>
+<body class="final-page">
+	<header class="site-header" id="top">
+		<a class="wordmark" href="index.html" aria-label="Our Story home">OUR STORY<span class="wordmark-dot">.</span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation">
+			<span></span><span></span>
+		</button>
+		<nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+			<a href="index.html">Home</a>
+			<a href="howwet.html">Beginning</a>
+			<a href="timeline.html">Timeline</a>
+			<a href="memories.html">Memories</a>
+			<a href="album.html">Album</a>
+			<a href="#final-message">Final Chapter</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="final-opening" aria-labelledby="final-title">
+			<img class="hero-image" src="images/final/final-hero.jpg" data-fallback="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2400&q=85" alt="Quiet evening light over a peaceful landscape" fetchpriority="high">
+			<div class="hero-shade"></div>
+			<div class="final-opening-copy">
+				<p class="eyebrow">A pause, not an ending</p>
+				<h1 id="final-title">THE FINAL CHAPTER</h1>
+				<p class="opening-refrain">After all the places.<br>All the conversations.<br>All the memories.</p>
+				<p class="opening-here">Here we are.</p>
+			</div>
+			<a class="final-opening-scroll" href="#numbers"><span>Take a quiet moment</span><span aria-hidden="true">↓</span></a>
+		</section>
+
+		<section class="numbers-section" id="numbers" aria-labelledby="numbers-title">
+			<div class="numbers-heading reveal">
+				<p class="eyebrow">A few ways to count</p>
+				<h2 id="numbers-title">A life, in little numbers<span>.</span></h2>
+			</div>
+			<div class="numbers-grid">
+				<div class="number-item number-days reveal">
+					<output class="number-value" id="days-count" aria-live="polite">[NUMBER]</output>
+					<span class="number-label">Days</span>
+					<label class="date-label" for="start-date">Together since</label>
+					<input id="start-date" class="start-date-input" type="date" aria-label="Choose the date your story began">
+				</div>
+				<div class="number-item reveal"><span class="number-value" contenteditable="true" role="textbox" aria-label="Number of memories">[NUMBER]</span><span class="number-label">Memories</span></div>
+				<div class="number-item reveal"><span class="number-value" contenteditable="true" role="textbox" aria-label="Number of places">[NUMBER]</span><span class="number-label">Places</span></div>
+				<div class="number-item reveal"><span class="number-value" contenteditable="true" role="textbox" aria-label="Number of photos">[NUMBER]</span><span class="number-label">Photos</span></div>
+				<div class="number-item reveal"><span class="number-value infinity-value" contenteditable="true" role="textbox" aria-label="Moments">∞</span><span class="number-label">Moments</span></div>
+			</div>
+		</section>
+
+		<section class="little-things section-shell" aria-labelledby="little-things-title">
+			<div class="little-things-heading reveal">
+				<div class="section-marker"><span>01</span><span class="marker-line"></span><span>Still noticing</span></div>
+				<div>
+					<p class="eyebrow">The small, everyday things</p>
+					<h2 id="little-things-title">Little Things I<br>Love About You<span>.</span></h2>
+				</div>
+			</div>
+			<div class="love-notes">
+				<article class="love-note reveal"><span class="note-index">01</span><p contenteditable="true" role="textbox" aria-label="A little thing I love about you">[THING I LOVE]</p><span class="note-mark" aria-hidden="true">—</span></article>
+				<article class="love-note reveal"><span class="note-index">02</span><p contenteditable="true" role="textbox" aria-label="A little thing I love about you">[THING I LOVE]</p><span class="note-mark" aria-hidden="true">—</span></article>
+				<article class="love-note reveal"><span class="note-index">03</span><p contenteditable="true" role="textbox" aria-label="A little thing I love about you">[THING I LOVE]</p><span class="note-mark" aria-hidden="true">—</span></article>
+				<article class="love-note reveal"><span class="note-index">04</span><p contenteditable="true" role="textbox" aria-label="A little thing I love about you">[THING I LOVE]</p><span class="note-mark" aria-hidden="true">—</span></article>
+			</div>
+		</section>
+
+		<section class="letter-section" aria-labelledby="letter-title">
+			<div class="letter-layout section-shell">
+				<div class="letter-side reveal">
+					<p class="eyebrow">For the pages we keep</p>
+					<span class="letter-seal" aria-hidden="true">O<span>.</span></span>
+					<span class="letter-side-caption">A NOTE, JUST FOR YOU</span>
+				</div>
+				<article class="letter-paper reveal">
+					<p class="eyebrow">A letter</p>
+					<h2 id="letter-title">To You</h2>
+					<p class="letter-body" contenteditable="true" role="textbox" aria-label="Write your letter" spellcheck="true">[WRITE YOUR LETTER HERE]</p>
+					<p class="letter-signoff" contenteditable="true" role="textbox" aria-label="Letter sign-off">With all my love,</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="last-photo-section" aria-label="One last photograph">
+			<figure class="last-photo reveal">
+				<img src="images/final/favorite.jpg" data-fallback="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=2000&q=85" alt="A favorite photograph, ready to be replaced with your own" loading="lazy">
+				<figcaption><span contenteditable="true" role="textbox" aria-label="Photograph date">[DATE]</span><i></i><span contenteditable="true" role="textbox" aria-label="Photograph location">[LOCATION]</span><p contenteditable="true" role="textbox" aria-label="Photograph caption">[CAPTION]</p></figcaption>
+			</figure>
+		</section>
+
+		<section class="final-message" id="final-message" aria-labelledby="final-message-title">
+			<p class="eyebrow reveal">The thought that stays</p>
+			<p class="final-question reveal">And if someone ever asks me<br>what my favorite chapter was...</p>
+			<span class="message-pause" aria-hidden="true"></span>
+			<h2 id="final-message-title" class="reveal">I'll say:<br><em>the one where I met you.</em></h2>
+			<span class="final-heart" aria-label="With love">❤️</span>
+		</section>
+
+		<section class="quiet-close">
+			<span class="closing-heart" aria-hidden="true">♡</span>
+			<p class="closing-wordmark">OUR STORY</p>
+			<p class="closing-subtitle">Still being written.</p>
+			<a class="closing-home" href="index.html">Return to the beginning <span aria-hidden="true">↑</span></a>
+		</section>
+	</main>
+
+	<button class="music-toggle" type="button" aria-pressed="false" aria-label="Play the optional song">
+		<span class="music-icon" aria-hidden="true">♫</span><span class="music-label">Our song</span>
+	</button>
+	<audio id="optional-song" src="audio/our-song.mp3" preload="none"></audio>
+	<p class="music-status" aria-live="polite"></p>
+
+	<footer class="final-footer">
+		<a href="index.html">OUR STORY</a>
+		<span>A story still being written.</span>
+		<a href="#top">Back to the beginning ↑</a>
+	</footer>
+</body>
+</html>
