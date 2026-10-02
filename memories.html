@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#211b19">
+	<meta name="description" content="A keepsake collection of places, experiences, and moments from Our Story.">
+	<title>Our Memories | Our Story</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://images.unsplash.com">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/memories.css">
+	<script src="js/memories.js" defer></script>
+	<script src="js/script.js" defer></script>
+</head>
+<body class="memories-page">
+	<header class="site-header" id="top">
+		<a class="wordmark" href="index.html" aria-label="Our Story home">OUR STORY<span class="wordmark-dot">.</span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation">
+			<span></span><span></span>
+		</button>
+		<nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+			<a href="index.html">Home</a>
+			<a href="howwet.html">Beginning</a>
+			<a href="timeline.html">Timeline</a>
+			<a href="#places">Memories</a>
+			<a href="album.html">Album</a>
+			<a href="final-chapter.html">Final Chapter</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="memories-hero" aria-labelledby="memories-title">
+			<div class="hero-collage" aria-hidden="true">
+				<img class="collage-photo collage-one" src="images/memories/hero-01.jpg" data-fallback="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="" fetchpriority="high">
+				<img class="collage-photo collage-two" src="images/memories/hero-02.jpg" data-fallback="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=85" alt="" fetchpriority="high">
+				<img class="collage-photo collage-three" src="images/memories/hero-03.jpg" data-fallback="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1000&q=85" alt="" fetchpriority="high">
+				<img class="collage-photo collage-four" src="images/memories/hero-04.jpg" data-fallback="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="" fetchpriority="high">
+				<img class="collage-photo collage-five" src="images/memories/hero-05.jpg" data-fallback="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85" alt="" fetchpriority="high">
+			</div>
+			<div class="memories-hero-shade"></div>
+			<div class="memories-hero-copy">
+				<p class="eyebrow">Collected along the way</p>
+				<h1 id="memories-title">OUR<br>MEMORIES</h1>
+				<p>Places we went.<br>Things we did.<br>Moments we never want to forget.</p>
+			</div>
+			<a class="memories-hero-scroll" href="#places"><span>Open the keepsake box</span><span aria-hidden="true">↓</span></a>
+			<a class="memories-hero-home" href="index.html">← <span>Back to our story</span></a>
+		</section>
+
+		<section class="places-section" id="places">
+			<div class="places-heading section-shell reveal">
+				<div class="section-marker"><span>01</span><span class="marker-line"></span><span>Our little atlas</span></div>
+				<div class="places-heading-copy">
+					<p class="eyebrow">Coordinates of a good day</p>
+					<h2>Places We<br>Discovered<span>.</span></h2>
+				</div>
+				<p class="places-aside">A few pins on the map.<br>A thousand ways to remember.</p>
+			</div>
+			<div class="location-grid" id="location-grid" aria-label="Places we discovered"></div>
+		</section>
+
+		<section class="categories-section" id="categories">
+			<div class="categories-heading section-shell reveal">
+				<div class="section-marker"><span>02</span><span class="marker-line"></span><span>Things we did</span></div>
+				<div>
+					<p class="eyebrow">Ordinary days, made ours</p>
+					<h2>Our kind of plans<span>.</span></h2>
+				</div>
+				<p class="category-hint">Choose a keepsake to open its notes <span aria-hidden="true">↓</span></p>
+			</div>
+			<div class="category-list" id="category-list" aria-label="Memory categories"></div>
+		</section>
+
+		<section class="editorial-memories" aria-label="Selected memories">
+			<div class="editorial-heading section-shell reveal">
+				<div class="section-marker"><span>03</span><span class="marker-line"></span><span>Kept close</span></div>
+				<p class="eyebrow">A few scenes from the album</p>
+			</div>
+			<div class="editorial-list" id="editorial-list"></div>
+		</section>
+
+		<section class="featured-memory" aria-labelledby="featured-memory-title">
+			<img class="featured-memory-image" src="images/memories/special.jpg" data-fallback="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2400&q=85" alt="A landscape for a memory worth keeping" loading="lazy">
+			<div class="featured-memory-shade"></div>
+			<div class="featured-memory-copy reveal">
+				<p class="eyebrow">A favorite without a reason</p>
+				<h2 id="featured-memory-title">Some memories<br>don't need a reason.</h2>
+				<p class="featured-memory-story" contenteditable="true" role="textbox" aria-label="Write a special memory" spellcheck="true">[WRITE YOUR STORY HERE]</p>
+			</div>
+			<span class="featured-memory-caption">ONE FOR THE KEEPSAKE BOX <i>—</i> [DATE]</span>
+		</section>
+
+		<section class="memories-ending">
+			<p class="eyebrow">The album stays open</p>
+			<h2>More to remember.<br>More to come.</h2>
+			<a class="memories-ending-link" href="timeline.html">Explore our timeline <span aria-hidden="true">→</span></a>
+			<a class="memories-ending-home" href="index.html">Return to Our Story</a>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<a class="wordmark" href="index.html">OUR STORY<span class="wordmark-dot">.</span></a>
+		<span>Made of moments, kept forever.</span>
+		<a class="back-to-top" href="#top">Back to top ↑</a>
+	</footer>
+</body>
+</html>
