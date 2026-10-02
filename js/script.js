@@ -21,11 +21,21 @@ if (menuToggle && navigation) {
 }
 
 document.querySelectorAll('img[data-fallback]').forEach((image) => {
-  image.addEventListener('error', () => {
-    if (image.dataset.fallback && image.src !== image.dataset.fallback) {
+  const handleImageError = () => {
+    if (image.dataset.fallback && !image.dataset.fallbackAttempted) {
+      image.dataset.fallbackAttempted = 'true';
       image.src = image.dataset.fallback;
+      return;
     }
-  }, { once: true });
+
+    image.classList.add('image-unavailable');
+  };
+
+  image.addEventListener('error', handleImageError);
+
+  if (image.complete && image.naturalWidth === 0) {
+    handleImageError();
+  }
 });
 
 const revealItems = document.querySelectorAll('.reveal');

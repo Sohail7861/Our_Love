@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#211b19">
+	<meta name="description" content="The first pages of Our Story: how it all began.">
+	<title>How We Met | Our Story</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://images.unsplash.com">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/howwet.css">
+	<script src="js/script.js" defer></script>
+</head>
+<body class="how-we-met-page">
+	<header class="site-header" id="top">
+		<a class="wordmark" href="index.html" aria-label="Our Story home">OUR STORY<span class="wordmark-dot">.</span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation">
+			<span></span><span></span>
+		</button>
+		<nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+			<a href="index.html">Home</a>
+			<a href="#story">Beginning</a>
+			<a href="timeline.html">Timeline</a>
+			<a href="memories.html">Memories</a>
+			<a href="album.html">Album</a>
+			<a href="final-chapter.html">Final Chapter</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="meeting-hero" aria-labelledby="meeting-title">
+			<img class="hero-image" src="images/timeline/beginning.jpg" data-fallback="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=2400&q=85" alt="A quiet, intimate moment at the beginning of a story" fetchpriority="high">
+			<div class="hero-shade"></div>
+			<div class="meeting-hero-copy">
+				<p class="eyebrow">A page from our diary</p>
+				<h1 id="meeting-title">THE BEGINNING</h1>
+				<p class="meeting-hero-subtitle">Where our story quietly started.</p>
+				<span class="meeting-hero-rule" aria-hidden="true"></span>
+				<div class="meeting-details" aria-label="When and where we met">
+					<span>[YEAR WE MET]</span><i></i><span>[DATE]</span><i></i><span>[LOCATION]</span>
+				</div>
+			</div>
+			<a class="meeting-scroll" href="#story"><span>Read the first page</span><span aria-hidden="true">↓</span></a>
+			<a class="home-return" href="index.html">← <span>Back to our story</span></a>
+		</section>
+
+		<section class="diary-story section-shell" id="story" aria-labelledby="story-heading">
+			<div class="diary-photo reveal">
+				<img src="images/timeline/first-meeting.jpg" data-fallback="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=85" alt="A photograph to add from the day we met" loading="lazy">
+				<span class="diary-photo-label">THE FIRST PAGE <i>—</i> [DATE]</span>
+			</div>
+			<article class="diary-copy reveal">
+				<p class="eyebrow">A note from the beginning</p>
+				<h2 id="story-heading">Where It<br>All Began<span class="gold-period">.</span></h2>
+				<div class="diary-entry">
+					<h3>How we met</h3>
+					<p class="editable-copy" contenteditable="true" role="textbox" aria-label="How we met story" spellcheck="true">[WRITE YOUR STORY HERE]</p>
+				</div>
+				<div class="diary-entry">
+					<h3>First impression</h3>
+					<p class="editable-copy" contenteditable="true" role="textbox" aria-label="First impression" spellcheck="true">[WRITE YOUR FIRST IMPRESSION HERE]</p>
+				</div>
+				<div class="diary-entry">
+					<h3>First conversation</h3>
+					<p class="editable-copy" contenteditable="true" role="textbox" aria-label="First conversation memory" spellcheck="true">[WRITE YOUR MEMORY HERE]</p>
+				</div>
+				<span class="diary-signoff">To be remembered, always.</span>
+			</article>
+		</section>
+
+		<section class="first-moment" aria-labelledby="moment-heading">
+			<img src="images/timeline/first-moment.jpg" data-fallback="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=2200&q=85" alt="A warm photograph for a favorite first memory" loading="lazy">
+			<div class="first-moment-shade"></div>
+			<div class="first-moment-copy reveal">
+				<p class="eyebrow">A moment we keep</p>
+				<h2 id="moment-heading">One ordinary moment.<br>One extraordinary beginning.</h2>
+				<p contenteditable="true" role="textbox" aria-label="Write a memory from the beginning" spellcheck="true">[YOUR MEMORY]</p>
+			</div>
+		</section>
+
+		<section class="firsts-section" aria-labelledby="firsts-heading">
+			<div class="firsts-heading section-shell reveal">
+				<div class="section-marker"><span>01</span><span class="marker-line"></span><span>The little firsts</span></div>
+				<div>
+					<p class="eyebrow">Small things, kept close</p>
+					<h2 id="firsts-heading">Our firsts<span class="gold-period">.</span></h2>
+				</div>
+				<p class="firsts-hint">Open a page to read its note <span aria-hidden="true">↓</span></p>
+			</div>
+			<div class="firsts-grid">
+				<details class="first-card reveal">
+					<summary><span class="first-card-photo"><img src="images/timeline/first-conversation.jpg" data-fallback="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80" alt="Photo for the first conversation" loading="lazy"></span><span class="first-card-meta"><span class="first-card-date">[DATE]</span><span class="first-card-title">First conversation</span><span class="first-card-toggle" aria-hidden="true">+</span></span></summary>
+					<p class="first-card-note" contenteditable="true" role="textbox" aria-label="First conversation description" spellcheck="true">[WRITE A FEW WORDS ABOUT THIS MOMENT]</p>
+				</details>
+				<details class="first-card reveal">
+					<summary><span class="first-card-photo"><img src="images/timeline/first-photograph.jpg" data-fallback="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=800&q=80" alt="Photo for the first photograph together" loading="lazy"></span><span class="first-card-meta"><span class="first-card-date">[DATE]</span><span class="first-card-title">First photograph</span><span class="first-card-toggle" aria-hidden="true">+</span></span></summary>
+					<p class="first-card-note" contenteditable="true" role="textbox" aria-label="First photograph description" spellcheck="true">[WRITE A FEW WORDS ABOUT THIS MOMENT]</p>
+				</details>
+				<details class="first-card reveal">
+					<summary><span class="first-card-photo"><img src="images/timeline/first-date.jpg" data-fallback="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Photo from the first date" loading="lazy"></span><span class="first-card-meta"><span class="first-card-date">[DATE]</span><span class="first-card-title">First date</span><span class="first-card-toggle" aria-hidden="true">+</span></span></summary>
+					<p class="first-card-note" contenteditable="true" role="textbox" aria-label="First date description" spellcheck="true">[WRITE A FEW WORDS ABOUT THIS MOMENT]</p>
+				</details>
+				<details class="first-card reveal">
+					<summary><span class="first-card-photo"><img src="images/timeline/first-movie.jpg" data-fallback="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80" alt="Photo from the first movie together" loading="lazy"></span><span class="first-card-meta"><span class="first-card-date">[DATE]</span><span class="first-card-title">First movie</span><span class="first-card-toggle" aria-hidden="true">+</span></span></summary>
+					<p class="first-card-note" contenteditable="true" role="textbox" aria-label="First movie description" spellcheck="true">[WRITE A FEW WORDS ABOUT THIS MOMENT]</p>
+				</details>
+				<details class="first-card reveal">
+					<summary><span class="first-card-photo"><img src="images/timeline/first-trip.jpg" data-fallback="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Photo from the first trip together" loading="lazy"></span><span class="first-card-meta"><span class="first-card-date">[DATE]</span><span class="first-card-title">First trip</span><span class="first-card-toggle" aria-hidden="true">+</span></span></summary>
+					<p class="first-card-note" contenteditable="true" role="textbox" aria-label="First trip description" spellcheck="true">[WRITE A FEW WORDS ABOUT THIS MOMENT]</p>
+				</details>
+				<details class="first-card reveal">
+					<summary><span class="first-card-photo"><img src="images/timeline/first-special-moment.jpg" data-fallback="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Photo of a first special moment" loading="lazy"></span><span class="first-card-meta"><span class="first-card-date">[DATE]</span><span class="first-card-title">First special moment</span><span class="first-card-toggle" aria-hidden="true">+</span></span></summary>
+					<p class="first-card-note" contenteditable="true" role="textbox" aria-label="First special moment description" spellcheck="true">[WRITE A FEW WORDS ABOUT THIS MOMENT]</p>
+				</details>
+			</div>
+		</section>
+
+		<section class="diary-quote" aria-label="A thought about looking back">
+			<span class="quote-mark" aria-hidden="true">“</span>
+			<blockquote class="reveal">Some moments don't look important when they happen.<br><em>Until you look back.</em></blockquote>
+			<span class="quote-rule" aria-hidden="true"></span>
+		</section>
+
+		<section class="next-chapter">
+			<p class="eyebrow">The next page</p>
+			<p class="next-chapter-lead">From the beginning<span>...</span></p>
+			<h2>To everything that<br>came after.</h2>
+			<a class="next-chapter-link" href="timeline.html">Explore our timeline <span aria-hidden="true">→</span></a>
+			<a class="next-home-link" href="index.html">Return to the home page</a>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<a class="wordmark" href="index.html">OUR STORY<span class="wordmark-dot">.</span></a>
+		<span>Made of moments, kept forever.</span>
+		<a class="back-to-top" href="#top">Back to top ↑</a>
+	</footer>
+</body>
+</html>
