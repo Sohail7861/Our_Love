@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#211b19">
+	<meta name="description" content="A chronological collection of the moments that became our story.">
+	<title>Our Timeline | Our Story</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://images.unsplash.com">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/timeline.css">
+	<script src="js/timeline.js" defer></script>
+	<script src="js/script.js" defer></script>
+</head>
+<body class="timeline-page">
+	<header class="site-header" id="top">
+		<a class="wordmark" href="index.html" aria-label="Our Story home">OUR STORY<span class="wordmark-dot">.</span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation">
+			<span></span><span></span>
+		</button>
+		<nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
+			<a href="index.html">Home</a>
+			<a href="howwet.html">Beginning</a>
+			<a href="#timeline">Timeline</a>
+			<a href="memories.html">Memories</a>
+			<a href="album.html">Album</a>
+			<a href="final-chapter.html">Final Chapter</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="timeline-hero" aria-labelledby="timeline-hero-title">
+			<img class="hero-image" src="images/timeline/timeline-hero.jpg" data-fallback="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2400&q=85" alt="Soft light falling across a distant landscape" fetchpriority="high">
+			<div class="hero-shade"></div>
+			<div class="timeline-hero-copy">
+				<p class="eyebrow">A collection of turning points</p>
+				<h1 id="timeline-hero-title">OUR TIMELINE</h1>
+				<p>Every date became a memory.<br>Every memory became part of us.</p>
+			</div>
+			<a class="timeline-hero-scroll" href="#timeline"><span>Follow the moments</span><span aria-hidden="true">↓</span></a>
+			<a class="timeline-hero-home" href="index.html">← <span>Back to our story</span></a>
+		</section>
+
+		<section class="timeline-introduction">
+			<p class="eyebrow">Kept in order, held close</p>
+			<p class="timeline-intro-copy">A few dates on a calendar.<br>A whole life inside them.</p>
+		</section>
+
+		<section class="timeline-section" id="timeline" aria-label="Relationship timeline">
+			<div class="timeline-top-note"><span>THE DAYS THAT MADE US</span><span>01 <i></i> 07</span></div>
+			<ol class="memory-timeline" id="memory-timeline" aria-label="Memories in chronological order"></ol>
+		</section>
+
+		<section class="timeline-ending">
+			<p class="eyebrow">Still unfolding</p>
+			<h2>And the story<br>kept going<span>.</span></h2>
+			<a class="timeline-ending-link" href="memories.html">Explore our memories <span aria-hidden="true">→</span></a>
+			<a class="timeline-ending-home" href="index.html">Return to Our Story</a>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<a class="wordmark" href="index.html">OUR STORY<span class="wordmark-dot">.</span></a>
+		<span>Made of moments, kept forever.</span>
+		<a class="back-to-top" href="#top">Back to top ↑</a>
+	</footer>
+</body>
+</html>
